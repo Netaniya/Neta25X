@@ -15,6 +15,13 @@
       0%,100%{opacity:0.8; filter:drop-shadow(0 0 20px #00ffd0);}
       50%{opacity:1; filter:drop-shadow(0 0 40px #0066ff);}
     }
+    .float {
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% {transform: translateY(0) scale(var(--scale, 1));}
+      50% {transform: translateY(-10px) scale(var(--scale, 1));}
+    }
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gray-900 text-white">
@@ -25,8 +32,8 @@
     <button id="enterBtn" class="px-6 py-2 rounded bg-gradient-to-r from-teal-400 to-blue-500 text-gray-900 font-semibold shadow-lg hover:from-blue-500 hover:to-teal-400 transition-colors">Enter the Mind</button>
     <div id="animation" class="hidden mt-6 text-blue-200"></div>
     <div class="flex justify-center space-x-6 mt-6">
-      <img src="neta_boy.png.jpg" alt="Neta Boy" class="w-40 rounded shadow-lg" />
-      <img src="neta_girl.png.jpg" alt="Neta Girl" class="w-40 rounded shadow-lg" />
+      <img src="assets/characters/boy.svg" alt="Neta Boy" class="rounded shadow-lg float" style="--scale:0.5;" />
+      <img src="assets/characters/girl.svg" alt="Neta Girl" class="rounded shadow-lg float" style="--scale:0.5;" />
     </div>
   </div>
   <script src="scripts/main.js"></script>
