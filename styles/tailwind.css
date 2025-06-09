@@ -1,0 +1,31 @@
+/* Custom styles for Neta25X */
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+.breathe {
+  animation: breathe 6s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0% { background-color: rgba(255,255,255,0); }
+  50% { background-color: rgba(255,255,255,0.05); }
+  100% { background-color: rgba(255,255,255,0); }
+}
+.shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+.logo-hover:hover {
+  filter: hue-rotate(45deg);
+}
+.eye {
+  transition: transform 0.1s linear;
+}
+.whisper {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.whisper.show {
+  opacity: 1;
+}
+#feel-form { display: none; }
+#feel-form.show { display: block; }
