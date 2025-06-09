@@ -1,3 +1,25 @@
+const languages = {
+  en: 'English',
+  de: 'Deutsch',
+  fr: 'Français',
+  es: 'Español',
+  it: 'Italiano',
+  ru: 'Русский',
+  zh: '中文',
+};
+
+function populateLangOptions() {
+  const select = document.getElementById('langSelect');
+  if (!select) return;
+  select.innerHTML = '';
+  Object.entries(languages).forEach(([code, name]) => {
+    const option = document.createElement('option');
+    option.value = code;
+    option.textContent = name;
+    select.appendChild(option);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('enterBtn');
   const anim = document.getElementById('animation');
@@ -23,4 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
       typeText(anim, 'Welcome within.');
     }, 3000);
   });
+
+  populateLangOptions();
 });
