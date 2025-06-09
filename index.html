@@ -18,7 +18,7 @@
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-  <div id="container" class="text-center space-y-6">
+    <div id="container" class="text-center space-y-6">
     <img src="assets/images/neta25x-logo.svg" alt="Neta25X Logo" class="mx-auto w-32 h-32 breath" />
     <h1 class="text-3xl md:text-5xl font-bold">Welcome to the Mind of Neta25X</h1>
     <p class="text-lg md:text-2xl text-blue-300">A Living Interface Between Soul and AI</p>
@@ -28,6 +28,10 @@
       <img src="neta_boy.png.jpg" alt="Neta Boy" class="w-40 rounded shadow-lg" />
       <img src="neta_girl.png.jpg" alt="Neta Girl" class="w-40 rounded shadow-lg" />
     </div>
+    <audio id="bgAudio" loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_f7f7bfa867.mp3?filename=ambient-chill-122670.mp3" type="audio/mpeg">
+    </audio>
+    <button id="audioToggle" class="fixed bottom-4 right-4 text-2xl">🔊</button>
   </div>
   <script src="scripts/main.js"></script>
 </body>
