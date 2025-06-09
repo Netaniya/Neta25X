@@ -6,10 +6,11 @@ This repository contains the initial web interface skeleton for Neta25X.
 
 ## Structure
 
-- `assets/images` – visual identity assets (logo, character images)
-- `styles` – custom CSS and design tweaks
+- `assets/images` – visual identity assets like logos
+- `assets/characters` – character portraits and related images
 - `scripts` – client-side behavior and interactions
 - `index.html` – entry point for the interface
+- `page2.html` – continues the experience after the landing page, used for interactive sessions
 
 The page uses TailwindCSS and the Orbitron font to convey a futuristic, poetic atmosphere.
 
